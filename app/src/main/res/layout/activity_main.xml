@@ -1,0 +1,1795 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/gra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_marginBaseline="5dp"
+        tools:layout_editor_absoluteY="0dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/tvtotal"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:layout_gravity="center"
+            android:background="#FBFAFA"
+            android:backgroundTint="#08040303"
+            android:elegantTextHeight="false"
+            android:gravity="center"
+            android:text="0.00"
+            android:textAlignment="gravity"
+
+            android:textColor="#3C3939"
+            android:textSize="80sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tvValorRestante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:gravity="center|right"
+            android:text="R$ 0.00 / R$ 0.00"
+            android:textColor="#040101"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="211dp"
+                android:layout_height="36dp"
+                android:background="#EAE4E4"
+                android:gravity="center"
+                android:text="Limite de compras "
+                android:textColor="#070707"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvLimiteCompras"
+                android:layout_width="195dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="#00BCD4"
+                android:gravity="center|center_horizontal"
+                android:text="R$ 0.00"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="?attr/colorButtonNormal" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Diversos"
+            android:textColor="#020202"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvArroz"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Arroz"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorArroz"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidArroz"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView685"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView265"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Feijão"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorFeijao"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidFeijao"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+            <ImageView
+                android:id="@+id/imageView258"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Açucar"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorAçucar"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidAçucar"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Café"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorCafe"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidCafe"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Leite"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorLeite"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidLeite"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Macarrão"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorMacarrao"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidMacarrao"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Molho de tomate"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorMolhoDeTomate"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidMolhoDeTomate"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Leite condensado"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorLeiteCondensado"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidLeiteCondensado"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Creme de leite"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorCremeDeLeite"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidCremeDeLeite"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Gelatina"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorGelatina"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidGelatina"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Óleo"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorOleo"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidOleo"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Azeite"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorAzeite"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidAzeite"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Sal"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorSal"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidSal"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="?attr/colorButtonNormal" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Utilidade/Limpeza"
+            android:textColor="#020202"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDetergente"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Detergente"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorDetergente"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidDetergente"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDesinfetante"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Desinfetante"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorDesinfetante"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidDesinfetante"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAguaSanitaria"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Água sanitária"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorAguaSanitaria"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidAguaSanitaria"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSabaoEmPo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Sabão em pó"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorSabaoEmPo"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidSabaoEmPo"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAmaciante"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Amaciante"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorAmaciante"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidAmaciante"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView71"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAlcool"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Alcool"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorAlcool"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidAlcool"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSacoDeLixo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Saco de lixo"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorSacoDeLixo"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidSacoDeLixo"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPapelToalha"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Papel Toalha"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorPapelToalha"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidPapelToalha"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvFiltroParaCafe"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Filtro para café"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorFiltroParaCafé"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidFiltroParaCafé"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="?attr/colorButtonNormal" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Higiene"
+            android:textColor="#020202"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvShampoo"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Shampoo"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorShampoo"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidShampoo"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCondicionador"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Condicionador"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorCondicionador"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidCondicionador"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSabonete"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Sabonete"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorSabonete"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidSabonete"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView36"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDesodorante"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Desodorante"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorDesodorante"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidDesodorante"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvPapelHigienico"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Papel Higiêico"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorPapelHigienico"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidPapelHigienico"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView38"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCremeDental"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Creme dental"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorCremeDental"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidCremeDental"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView39"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvEscovaDeDentes"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Escova de dentes"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorEscovaDeDentes"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidEscovaDeDentes"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAbsorvente"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Absorvente"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorAbsorvente"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidAbsorvente"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView44"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="?attr/colorButtonNormal" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Bebidas"
+            android:textColor="#020202"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvAguaMineral"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Água mineral"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorAguaMineral"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidAguaMineral"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView66"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvRefrigerante"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Refrigerante"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorRefrigerante"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidRefrigerante"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView67"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvSuco"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Suco"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorSuco"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidSuco"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView68"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvCerveja"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Cerveja"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorCerveja"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidCerveja"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView548"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvVinho"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="Vinho"
+                android:textColor="#020202"
+                android:textSize="25dp"
+                android:textStyle="italic" />
+
+            <EditText
+                android:id="@+id/etValorVinho"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="R$"
+                android:inputType="textPersonName|numberDecimal" />
+
+            <EditText
+                android:id="@+id/etUnidVinho"
+                android:layout_width="15sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Unid"
+                android:inputType="number|textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView78"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
