@@ -236,6 +236,254 @@ class MainActivity : AppCompatActivity() {
         val unidSuco = etUnidSuco.text.toString()
         val vinhoString = etValorVinho.text.toString()
         val unidVinho = etUnidVinho.text.toString()
+        
+         val absorvente: Int
+        val unidAbsorvente: Int
+        val aguaMineral: Int
+        val unidAguaMineral: Int
+        val aguaSanitaria: Int
+        val unidAguaSanitaria: Int
+        val alcool: Int
+        val unidAlcool: Int
+        val amaciante: Int
+        val unidAmaciante: Int
+        val arroz: Int
+        val unidArroz: Int
+        val azeite: Int
+        val unidAzeite: Int
+        val acucar: Int
+        val unidAcucar: Int
+        val cafe: Int
+        val unidCafe: Int
+        val cerveja: Int
+        val unidCerveja: Int
+        val condicionador: Int
+        val unidCondicionador: Int
+        val cremeDeLeite: Int
+        val unidCremeDeLeite: Int
+        val cremeDental: Int
+        val unidCremeDental: Int
+        val desinfetante: Int
+        val unidDesinfetante: Int
+        val desodorante: Int
+        val unidDesodorante: Int
+        val detergente: Int
+        val unidDetergente: Int
+        val escovaDeDente: Int
+        val unidEscovaDeDente: Int
+        val feijao: Int
+        val unidFeijao: Int
+        val filtroParaCafe: Int
+        val unidFiltroParaCafe: Int
+        val gelatina: Int
+        val unidGelatina: Int
+        val leite: Int
+        val unidLeite: Int
+        val leiteCondensado: Int
+        val unidLeiteCondensado: Int
+        val macarrao: Int
+        val unidMacarrao: Int
+        val molhoDeTomate: Int
+        val unidMolhoDeTomate: Int
+        val oleo: Int
+        val unidOleo: Int
+        val papelHigienico: Int
+        val unidPapelHigienico: Int
+        val papelToalha: Int
+        val unidPapelToalha: Int
+        val refrigerante: Int
+        val unidRefrigerante: Int
+        val sabaoEmPo: Int
+        val unidSabaoEmPo: Int
+        val sabonete: Int
+        val unidSabonete: Int
+        val sacoDeLixo: Int
+        val unidSacoDeLixo: Int
+        val sal: Int
+        val unidSal: Int
+        val shampoo: Int
+        val unidShampoo: Int
+        val suco: Int
+        val unidSuco: Int
+        val vinho: Int
+        val unidVinho: Int
+
+        if (absorventeString.isNullOrEmpty()) {
+            absorvente = 0
+        } else {
+            absorvente = absorventeString.toInt()
+        }
+        if (unidAbsorventeString.isNullOrEmpty()) {
+            unidAbsorvente = 1
+        } else {
+            unidAbsorvente = unidAbsorventeString.toInt()
+        }
+
+        if (aguaMineralString.isNullOrEmpty()) {
+            aguaMineral = 0
+        } else {
+            aguaMineral = aguaMineralString.toInt()
+        }
+
+        if (unidAguaMineralString.isNullOrEmpty()) {
+            unidAguaMineral = 1
+        } else {
+            unidAguaMineral = unidAguaMineralString.toInt()
+        }
+
+        if (aguaSanitariaString.isNullOrEmpty()) {
+            aguaSanitaria = 0
+        } else {
+            aguaSanitaria = aguaSanitariaString.toInt()
+        }
+        if (unidAguaSanitariaString.isNullOrEmpty()) {
+            unidAguaSanitaria = 1
+        } else {
+            unidAguaSanitaria = unidAguaSanitariaString.toInt()
+        }
+
+        if (alcoolString.isNullOrEmpty()) {
+            alcool = 0
+        } else {
+            alcool = alcoolString.toInt()
+        }
+        if (unidAlcoolString.isNullOrEmpty()) {
+            unidAlcool = 1
+        } else {
+            unidAlcool = unidAlcoolString.toInt()
+        }
+
+        if (amacianteString.isNullOrEmpty()){
+            amaciante = 0
+        }else{
+            amaciante = amacianteString.toInt()
+        }
+        if (unidAmacianteString.isNullOrEmpty()){
+            unidAmaciante = 1
+        }else {
+            unidAmaciante = unidAmacianteString.toInt()
+        }
+
+        if (arrozString.isNullOrEmpty()){
+            arroz = 0
+        }else{
+            arroz = arrozString.toInt()
+        }
+        if (unidArrozString.isNullOrEmpty()){
+            unidArroz = 1
+        }else{
+            unidArroz = unidArrozString.toInt()
+        }
+
+        if (azeiteString.isNullOrEmpty()){
+            azeite = 0
+        }else{
+            azeite = azeiteString.toInt()
+        }
+        if (unidAzeiteString.isNullOrEmpty()){
+            unidAzeite = 1
+        }else{
+            unidAzeite = unidAzeiteString.toInt()
+        }
+
+        if (acucarString.isNullOrEmpty()){
+            acucar = 0
+        }else{
+            acucar = acucarString.toInt()
+        }
+        if (unidAcucarString.isNullOrEmpty()){
+            unidAcucar = 1
+        }else{
+            unidAcucar = unidAcucarString.toInt()
+        }
+
+        if (cafeString.isNullOrEmpty()){
+            cafe = 0
+        }else{
+            cafe = cafeString.toInt()
+        }
+        if (unidCafeString.isNullOrEmpty()){
+            unidCafe = 1
+        }else{
+            unidCafe = unidCafeString.toInt()
+        }
+
+        if (cervejaString.isNullOrEmpty()){
+            cerveja = 0
+        }else{
+            cerveja = cervejaString.toInt()
+        }
+        if (unidCervejaString.isNullOrEmpty()){
+            unidCerveja = 1
+        }else{
+            unidCerveja = unidCervejaString.toInt()
+        }
+
+        if (condicionadorString.isNullOrEmpty()){
+            condicionador = 0
+        }else{
+            condicionador = condicionadorString.toInt()
+        }
+        if (unidCondicionadorString.isNullOrEmpty()){
+            unidCondicionador = 1
+        }else{
+            unidCondicionador = unidCondicionadorString.toInt()
+        }
+
+        if (cremeDeLeiteString.isNullOrEmpty()){
+            cremeDeLeite = 0
+        }else{
+            cremeDeLeite = cremeDeLeiteString.toInt()
+        }
+        if (unidCremeDeLeiteString.isNullOrEmpty()){
+            unidCremeDeLeite = 1
+        }else{
+            unidCremeDeLeite = unidCremeDeLeiteString.toInt()
+        }
+
+        if (cremeDentalString.isNullOrEmpty()){
+            cremeDental = 0
+        }else{
+            cremeDental = cremeDentalString.toInt()
+        }
+        if (unidCremeDentalString.isNullOrEmpty()){
+            unidCremeDental = 1
+        }else{
+            unidCremeDental = unidCremeDentalString.toInt()
+        }
+
+        if (desinfetanteString.isNullOrEmpty()){
+            desinfetante = 0
+        }else{
+            desinfetante = desinfetanteString.toInt()
+        }
+        if (unidDesinfetanteString.isNullOrEmpty()){
+            unidDesinfetante = 1
+        }else{
+            unidDesinfetante = unidDesinfetanteString.toInt()
+        }
+
+        if (desodoranteString.isNullOrEmpty()){
+            desodorante = 0
+        }else{
+            desodorante = desodoranteString.toInt()
+        }
+        if (unidDesodoranteString.isNullOrEmpty()){
+            unidDesodorante = 1
+        }else{
+            unidDesodorante = unidDesodoranteString.toInt()
+        }
+
+        if (detergenteString.isNullOrEmpty()){
+            detergente = 0
+        }else{
+            detergente = detergenteString.toInt()
+        }
+        if (unidDetergenteString.isNullOrEmpty()){
+            unidDetergente = 1
+        }else{
+            unidDetergente = unidDetergenteString.toInt()
+        }
 
     }
 
